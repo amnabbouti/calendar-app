@@ -1,0 +1,93 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #505659;
+  color: #42bb12;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-direction: column;
+}
+
+.container {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #42bb12;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.file-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #42bb12;
+  border-radius: 5px;
+}
+
+.file-list a {
+  color: #42bb12;
+  text-decoration: none;
+}
+
+.file-list a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: #1b15c5;
+  color: #e5f3e5;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #28a933;
+  color: #eaeef6;
+}
+
+.upload-new {
+  display: inline-block;
+  margin-top: 20px;
+  color: #42bb12;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.upload-new:hover {
+  text-decoration: underline;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(28, 28, 28, 0.9);
+  color: #00ff00;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 0 20px #00ff00;
+}

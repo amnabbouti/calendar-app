@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule File Upload</title>
+    <link rel="stylesheet" href="./indexx.css" />
+  </head>
+  <body>
+    <h1>Turn Text Files into iCalendar Events</h1>
+    <div class="container">
+      <h1>UPLOAD YOUR FILE.TXT</h1>
+      <form id="upload-form" enctype="multipart/form-data">
+        <input
+          type="file"
+          name="scheduleFile"
+          accept=".ics, .txt"
+          required
+          aria-label="Schedule file"
+        />
+        <button type="submit">UPLOAD</button>
+      </form>
+      <div id="response" class="response" aria-live="polite"></div>
+      <div class="progress-bar"><div class="progress-bar-inner"></div></div>
+      <a href="./list-files.html">VIEW AVAILABLE FILES</a>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
